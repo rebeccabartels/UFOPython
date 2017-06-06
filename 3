@@ -1,0 +1,31 @@
+stage.set_background("space")
+
+sprite = codesters.Sprite("ufo")
+
+sprite.set_size(0.4)
+
+sprite.go_to(-200, -200)
+
+sprite.pen_down()
+
+sprite.glide_to(-100, -100)
+
+def collision(sprite, hit_sprite):
+    hit_sprite.hide()
+
+# add any other actions...
+
+
+
+sprite.event_collision(collision)
+
+sprite.set_speed(2)
+
+sprite.glide_to(150, -100)
+
+sprite.glide_to(150, 100)
+
+sprite.glide_to(-150, 200)
+
+
+
