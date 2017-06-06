@@ -1,0 +1,49 @@
+stage.set_background("volcano")
+
+sprite = codesters.Sprite("dinosaur3")
+
+sprite.set_size(0.4)
+
+sprite.go_to(-200, -200)
+
+sprite.pen_down()
+
+sprite.set_color("yellow")
+
+sprite.glide_to(-100, -100)
+
+def collision(sprite, hit_sprite):
+    hit_sprite.hide()
+
+
+
+# add any other actions...
+
+
+
+sprite.event_collision(collision)
+
+sprite.set_speed(2)
+
+sprite.glide_to(150, -100)
+
+sprite.set_color('white')
+
+sprite.glide_to(150, 100)
+
+sprite.set_color('pink')
+
+sprite.glide_to(-150, 200)
+
+sprite.set_color('green')
+
+sprite.glide_to(-200, 50)
+
+sprite.set_color('orange')
+
+sprite.glide_to(-200, -200)
+
+sprite.turn_left(360)
+
+
+
